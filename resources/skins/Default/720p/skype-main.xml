@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<window>
-	<coordinates>
-		<system>1</system>
-		<left>0</left>
-		<top>0</top>
-	</coordinates>
+<window id="40077" type="window">
+
+	<defaultcontrol>121</defaultcontrol>
+
 	<controls>
+
 		<control type="group">
 			<left>0</left>
 			<top>0</top>
@@ -23,13 +22,6 @@
 				<height>62</height>
 				<texture>skype-logo.png</texture>
 			</control>
-			<control type="image" id="2">
-				<left>20</left>
-				<top>20</top>
-				<width>62</width>
-				<height>62</height>
-				<texture></texture>
-			</control>
 			<control type="label" id="1">
 				<posx>90</posx>
 				<posy>30</posy>
@@ -39,9 +31,31 @@
 				<aligny>left</aligny>
 				<scroll>false</scroll>
 				<label>--</label>
-				<font>skype_font24</font>
 				<textcolor>FFFFFFFF</textcolor>
 				<shadowcolor>ff000000</shadowcolor>
+			</control>
+			<control type="image" id="2">
+				<left>20</left>
+				<top>20</top>
+				<width>62</width>
+				<height>62</height>
+				<texture></texture>
+			</control>
+
+			<control type="scrollbar" id="121">
+				<description>scroll bar indicator for lists</description>
+				<posx>20</posx>
+				<posy>140</posy>
+				<width>12</width>
+				<height>400</height>
+				<texturesliderbackground border="6">scroll_bg.png</texturesliderbackground>
+				<texturesliderbar border="6">scroll_bar.png</texturesliderbar>
+				<texturesliderbarfocus border="6">scroll_bar_focus.png</texturesliderbarfocus>
+				<textureslidernib>-</textureslidernib>
+				<textureslidernibfocus>-</textureslidernibfocus>
+				<orientation>vertical</orientation>
+				<showonepage>false</showonepage>
+				<onright>3</onright>
 			</control>
 
 			<control type="panel" id="3">
@@ -49,14 +63,10 @@
 				<posy>140</posy>
 				<width>1200</width>
 				<height>400</height>
-				<onleft>9000</onleft>
-				<onright>60</onright>
-				<onup>52</onup>
-				<ondown>52</ondown>
-				<scrolltime tween="sine" easing="out">200</scrolltime>
-				<autoscroll>true</autoscroll>
 				<viewtype label="536">icon</viewtype>
-				<pagecontrol>60</pagecontrol>
+				<pagecontrol>121</pagecontrol>
+				<onleft>121</onleft>
+				<autoscroll>true</autoscroll>
 				<itemlayout height="200" width="150">
 					<control type="image">
 						<posx>10</posx>
@@ -64,13 +74,6 @@
 						<width>130</width>
 						<height>130</height>
 						<info>ListItem.Icon</info>
-					</control>
-					<control type="image">
-						<posx>80</posx>
-						<posy>75</posy>
-						<width>32</width>
-						<height>32</height>
-						<info>ListItem.Overlay</info>
 					</control>
 					<control type="label">
 						<posx>30</posx>
@@ -83,38 +86,21 @@
 						<info>ListItem.Label</info>
 					</control>
 				</itemlayout>
-				<focusedlayout height="250" width="200">
+				<focusedlayout height="200" width="150">
 					<control type="image">
-						<width>110</width>
-						<height>110</height>
-						<posx>5</posx>
-						<posy>5</posy>
-						<texture>folder-focus.png</texture>
-						<animation effect="zoom" end="0,0,120,120" time="100">focus</animation>
-					</control>
-					<control type="image">
-						<posx>10</posx>
-						<posy>10</posy>
-						<width>100</width>
-						<height>100</height>
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>10</width>
+						<height>10</height>
 						<info>ListItem.Icon</info>
-						<animation effect="zoom" end="5,5,110,110" time="100">focus</animation>
-					</control>
-					<control type="image">
-						<posx>80</posx>
-						<posy>75</posy>
-						<width>32</width>
-						<height>32</height>
-						<info>ListItem.Overlay</info>
-						<animation effect="slide" end="5,5" time="100">focus</animation>
 					</control>
 					<control type="label">
-						<posx>60</posx>
-						<posy>120</posy>
-						<width>110</width>
+						<posx>30</posx>
+						<posy>140</posy>
+						<width>100</width>
 						<height>22</height>
 						<font>font13</font>
-						<selectedcolor>green</selectedcolor>
+						<selectedcolor>red</selectedcolor>
 						<align>center</align>
 						<info>ListItem.Label</info>
 					</control>
@@ -122,5 +108,9 @@
 			</control>
 
 		</control>
+
+
+
+
 	</controls>
 </window>
