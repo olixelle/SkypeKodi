@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="script.module.skype" name="Skype" version="0.0.1" provider-name="Olixelle">
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_gb">Skype integrated in Kodi</summary>
+    <description lang="en_gb">Browse friends, accept or issue calls</description>
+    <disclaimer lang="en_gb"></disclaimer>
+    <language></language>
+    <platform>windx</platform>
+    <license></license>
+    <forum></forum>
+    <website></website>
+    <email></email>
+    <source></source>
+  </extension>
+</addon>
