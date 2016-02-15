@@ -1,0 +1,9 @@
+<fonts>
+	<fontset id="Default" unicode="true">
+		<font>
+			<name>skype_font_list</name>
+			<filename>trebuc.ttf</filename>
+			<size>24</size>
+		</font>
+	</fontset>
+</fonts>

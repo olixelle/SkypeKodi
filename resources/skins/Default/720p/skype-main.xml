@@ -5,19 +5,21 @@
 
 	<controls>
 
-		<control type="group">
+		<!-- Group for background and header -->
+		<control type="group" id="110">
+			<description>Group for background and header</description>
 			<left>0</left>
 			<top>0</top>
 			<control type="image">
 				<left>0</left>
 				<top>0</top>
 				<width>1280</width>
-				<height>720</height>
+				<height>770</height>
 				<texture border="40">background.jpeg</texture>
 			</control>
 			<control type="image">
-				<left>1100</left>
-				<top>20</top>
+				<left>1080</left>
+				<top>30</top>
 				<width>140</width>
 				<height>62</height>
 				<texture>skype-logo.png</texture>
@@ -26,7 +28,7 @@
 				<posx>90</posx>
 				<posy>30</posy>
 				<width>500</width>
-				<visible>true</visible>
+				<visible>false</visible>
 				<align>left</align>
 				<aligny>left</aligny>
 				<scroll>false</scroll>
@@ -35,37 +37,30 @@
 				<shadowcolor>ff000000</shadowcolor>
 			</control>
 			<control type="image" id="2">
-				<left>20</left>
-				<top>20</top>
+				<left>40</left>
+				<top>30</top>
 				<width>62</width>
 				<height>62</height>
 				<texture></texture>
 			</control>
 
-			<control type="scrollbar" id="121">
-				<description>scroll bar indicator for lists</description>
-				<posx>20</posx>
-				<posy>140</posy>
-				<width>12</width>
-				<height>400</height>
-				<texturesliderbackground border="6">scroll_bg.png</texturesliderbackground>
-				<texturesliderbar border="6">scroll_bar.png</texturesliderbar>
-				<texturesliderbarfocus border="6">scroll_bar_focus.png</texturesliderbarfocus>
-				<textureslidernib>-</textureslidernib>
-				<textureslidernibfocus>-</textureslidernibfocus>
-				<orientation>vertical</orientation>
-				<showonepage>false</showonepage>
-				<onright>3</onright>
-			</control>
+		</control>
 
-			<control type="panel" id="3">
-				<posx>40</posx>
-				<posy>140</posy>
+		<!-- Group for friends list -->
+		<control type="group" id="120">
+			<description>Group for friends list</description>
+			<left>0</left>
+			<top>0</top>
+
+
+			<control type="panel" id="122">
+				<posx>30</posx>
+				<posy>160</posy>
 				<width>1200</width>
 				<height>400</height>
 				<viewtype label="536">icon</viewtype>
-				<pagecontrol>121</pagecontrol>
 				<onleft>121</onleft>
+				<orientation>horizontal</orientation>
 				<autoscroll>true</autoscroll>
 				<itemlayout height="200" width="150">
 					<control type="image">
@@ -73,26 +68,55 @@
 						<posy>10</posy>
 						<width>130</width>
 						<height>130</height>
+						<texture>friend.png</texture>
+					</control>
+					<control type="image">
+						<posx>10</posx>
+						<posy>10</posy>
+						<width>130</width>
+						<height>130</height>
 						<info>ListItem.Icon</info>
+					</control>
+					<control type="image">
+						<posx>10</posx>
+						<posy>10</posy>
+						<width>130</width>
+						<height>130</height>
+						<texture>contact_border.png</texture>
 					</control>
 					<control type="label">
 						<posx>30</posx>
 						<posy>140</posy>
 						<width>100</width>
 						<height>22</height>
-						<font>font13</font>
-						<selectedcolor>green</selectedcolor>
+						<font>skype_font_list</font>
+						<textcolor>FFB2D4F5</textcolor>
 						<align>center</align>
 						<info>ListItem.Label</info>
 					</control>
 				</itemlayout>
 				<focusedlayout height="200" width="150">
 					<control type="image">
-						<posx>0</posx>
-						<posy>0</posy>
-						<width>10</width>
-						<height>10</height>
+						<posx>10</posx>
+						<posy>10</posy>
+						<width>130</width>
+						<height>130</height>
+						<texture>friend.png</texture>
+					</control>
+					<control type="image">
+						<posx>10</posx>
+						<posy>10</posy>
+						<width>130</width>
+						<height>130</height>
 						<info>ListItem.Icon</info>
+						<animation effect="fade" start="80" time="1000" condition="True" pulse="true">Conditional</animation>
+					</control>
+					<control type="image">
+						<posx>10</posx>
+						<posy>10</posy>
+						<width>130</width>
+						<height>130</height>
+						<texture>contact_border_focus.png</texture>
 					</control>
 					<control type="label">
 						<posx>30</posx>
@@ -100,15 +124,13 @@
 						<width>100</width>
 						<height>22</height>
 						<font>font13</font>
-						<selectedcolor>red</selectedcolor>
 						<align>center</align>
 						<info>ListItem.Label</info>
+						<textcolor>FFFFFFFF</textcolor>
 					</control>
 				</focusedlayout>
 			</control>
-
 		</control>
-
 
 
 
